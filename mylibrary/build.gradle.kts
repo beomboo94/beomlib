@@ -25,11 +25,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
 }
 
@@ -49,7 +49,7 @@ publishing {
             from(components.findByName("release") ?: return@create)
             groupId = "com.github.beomboo" // GitHub 사용자명
             artifactId = "beomboo" // JitPack에서 사용할 Artifact ID
-            version = "0.1.0" // 릴리즈 버전
+            version = "0.1.1" // 릴리즈 버전
         }
     }
 }
